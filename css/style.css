@@ -296,7 +296,7 @@ body {
 
 /* header image */
 header img {
-  width: 80vh;
+  width: 400px;
   max-width: 98%;
 }
 
@@ -363,7 +363,7 @@ a {
     }
 
 a:hover {
-      color: #DA5437;
+      color: #eb70b4;
     }
 
 /* HEADER */
@@ -457,7 +457,7 @@ header #nav {
 
 /* highlight a table row and make pointer into hand when moused over */
 .archiveRow:hover {
-  background-color: #DA5437;
+  background-color: #eb70b4;
   cursor: pointer;
 }
 
