@@ -294,6 +294,23 @@ body {
   background-color: #e0e4f1;
 }
 
+/*fade in transition from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
+body {
+	animation: fadeInAnimation ease 2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
 /* header image */
 header img {
   width: 400px;
