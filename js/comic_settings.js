@@ -29,7 +29,7 @@ const thumbDefault = "default" //name of the default thumbnail that displays whe
 const navText = ["First","Previous","Next","Last"]; //alt text for your nav images, or just the text that shows up if you're not using images
 const navFolder = "img/comicnav"; //directory where nav images are stored
 const navExt = "png" //file extension of nav images
-const navScrollTo = "#showComic"; //id of the div you want the page to automatically scroll to when you click to the next comic. will turn off if you delete text between quotation marks
+const navScrollTo = ""; //id of the div you want the page to automatically scroll to when you click to the next comic. will turn off if you delete text between quotation marks
 
 if (pg == 0) {pg = maxpg;} //display MOST RECENT COMIC when the webpage is loaded. if you want to instead have the FIRST COMIC displayed first, change maxpg to 1.
 
@@ -48,19 +48,19 @@ const pgData = [
     {
         pgNum: 1, //what page number it is
         date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
-        altText: "Here's some alt text!", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
+        altText: "", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
         imageFiles: 1, //how many image files this page is split into
     },
     {
         pgNum: 2,
         date: writeDate(2021, 3, 17),
-        altText: "Here's some more alt text!",
+        altText: "",
         imageFiles: 1,
     },
     {
         pgNum: 3,
         date: writeDate(2021, 3, 18),
-        altText: "Here's even more alt text!",
+        altText: "",
         imageFiles: 1,
     },
 ];

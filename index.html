@@ -30,7 +30,16 @@
 
   <div align="center">
     <!-- header that has the logo image and top page navigation. don't forget to put this on every page -->
-    <div class="writeHeader"></div>
+    <header align="center">
+      <a href="index.html"><img src="img/header.jpg" alt="" /></a> 
+
+      <div id="nav">
+          <a href="index.html">Home</a> |
+          <a href="archive.html">Archive</a> |
+          <a href="about.html">About</a> |
+          <a href="characters.html">Characters</a>
+      </div>
+    </header>
 
     <!-- make sure that if you want to turn on automatically scrolling to the top of the comic when you load a new page, keep the id of this div and the variable "navScrollTo" in showcomic.js the same-->
     <div id="showComic">
@@ -39,10 +48,19 @@
       <div class="writePageTitle"></div>
       <!-- write the current page of your comic -->
       <div class="writePageClickable"></div>
+
+      <div class="sr-only focusable" :active> <!-- test screen reader only class/navigation between elements -->
+        <h1 class="sr-only focusable" :focus>Page Title</h1>
+        <section class="sr-only focusable" :focus>Panel 1: A wide shot of empty outer space, with stars in the distance.</section> <!-- paragraphs don't allow individual control -->
+        <section class="sr-only focusable" :focus>Panel 2: One figure appears in the empty space.
+          <br>It's a small delivery truck, towing multiple rectangular packages within a net.<br></section>
+      </div>
+
       <!-- write bottom navigation -->
       <div class="writeNav"></div>
       
     </div>
+
   </div>
 
 <!-- footer that has a link back to rarebit, and ideally has copyright info and stuff. again, don't forget to put this on every page-->
@@ -51,7 +69,6 @@
   <!-- really important- every js script is called here, be sure to always put them just before the closing body tag, use a defer attribute, and call them in this specific order.-->
     <script src="js/comic_settings.js" defer></script>
     <script src="js/comic_show.js" defer></script>
-    <script src="js/comic_header.js" defer></script>
     <script src="js/comic_footer.js" defer></script>
   </body>
 </html>

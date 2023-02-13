@@ -295,7 +295,7 @@ body {
 }
 
 /*fade in transition from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
-body {
+#showComic {
 	animation: fadeInAnimation ease 2s;
 	animation-iteration-count: 1;
 	animation-fill-mode: forwards;
