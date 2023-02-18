@@ -8,7 +8,7 @@
 
 
 
-writeNav(false); //show navigation for comic pages. to toggle either images or text for nav, set this to true or false.
+writeNav(true); //show navigation for comic pages. to toggle either images or text for nav, set this to true or false.
 
 //debug
 console.log(pg)
@@ -109,7 +109,7 @@ function writeNav(imageToggle) {
         //FIRST BUTTON
         if (pg > 1) {
             //wait until page 2 to make button active
-            return `<a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a>`;
+            return `<button><a href="?pg=` + 1 + navScrollTo + `"/>` + imgOrText(imageToggle, 0) + `</a></button>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 0);
@@ -122,7 +122,7 @@ function writeNav(imageToggle) {
     function divider() {
         //divider
         if (!imageToggle) {
-            return ` | `;
+            return `  `;
         }
         return ``;
     }
@@ -131,7 +131,7 @@ function writeNav(imageToggle) {
         //PREV BUTTON
         if (pg > 1) {
             //wait until page 2 to make button active
-            return `<a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a>`;
+            return `<button><a href="?pg=` + (pg - 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 1) + `</a></button>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 1);
@@ -145,7 +145,7 @@ function writeNav(imageToggle) {
         //NEXT BUTTON
         if (pg < maxpg) {
             //only make active if not on the last page
-            return `<a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a>`;
+            return `<button><a href="?pg=` + (pg + 1) + navScrollTo + `"/>` + imgOrText(imageToggle, 2) + `</a></button>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 2);
@@ -159,7 +159,7 @@ function writeNav(imageToggle) {
         //LAST BUTTON
         if (pg < maxpg) {
             //only make active if not on last page
-            return `<a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a>`;
+            return `<button><a href="?pg=` + maxpg + navScrollTo + `"/>` + imgOrText(imageToggle, 3) + `</a></button>`;
         } else {
             if (!imageToggle) {
                 return imgOrText(imageToggle, 3);

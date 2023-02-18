@@ -5,10 +5,18 @@ document.querySelector(".writeHeader").innerHTML = `
         <a href="index.html"><img src="./img/header.jpg" alt="" /></a> 
 
         <div id="nav">
-            <a href="index.html">Home</a> |
-            <a href="archive.html">Archive</a> |
-            <a href="about.html">About</a> |
-            <a href="characters.html">Characters</a>
+            <button>
+                <a href="index.html">Home</a>
+            </button>
+            <button>
+                <a href="archive.html">Archive</a>
+            </button>
+            <button>
+                <a href="about.html">About</a>
+            </button>
+            <button>
+                <a href="characters.html">Characters</a>
+            </button>
         </div>
     </header>
 `;

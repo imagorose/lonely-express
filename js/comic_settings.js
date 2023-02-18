@@ -18,7 +18,7 @@ const maxpg = 3; //the current number of pages your comic has in total. this DOE
 const folder = "img/comics"; //directory of the folder where you keep all the comics
 const image = "pg"; //what you'll name all your comic pages
 const imgPart = "_" //special character(s) you put after the page number to subdivide pages into multiple image files (ie pg2_1, pg2_2, etc)
-const ext = "jpg"; //file extension of your comic pages
+const ext = "png"; //file extension of your comic pages
 
 //THUMBNAIL SETTINGS
 const thumbFolder = "img/thumbs" //directory of the folder where you keep all the thumbnail images for the comics, in case you want the archive page to use thumbnails.
@@ -47,19 +47,19 @@ if (pg == 0) {pg = maxpg;} //display MOST RECENT COMIC when the webpage is loade
 const pgData = [
     {
         pgNum: 1, //what page number it is
-        date: writeDate(2021, 3, 16), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
+        date: writeDate(2023, 2, 17), //the date on which the page was posted (mainly for the archive). The date is written using a function called "writeDate", basically just put writeDate and then some parenthesis and, comma separated, the year followed by the month and the day. Don't forget another comma at the end outside the parenthesis!
         altText: "", //the alt text (mouse over text) for this particular comic. put nothing inbetween the quotes for no alt text
         imageFiles: 1, //how many image files this page is split into
     },
     {
         pgNum: 2,
-        date: writeDate(2021, 3, 17),
+        date: writeDate(2023, 2, 17),
         altText: "",
         imageFiles: 1,
     },
     {
         pgNum: 3,
-        date: writeDate(2021, 3, 18),
+        date: writeDate(2023, 2, 17),
         altText: "",
         imageFiles: 1,
     },

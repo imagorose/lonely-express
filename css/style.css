@@ -278,6 +278,7 @@ html {
 body {
     width: 100%;
     display: table-cell;
+    background-color: #101B42;
 }
 
 html, body {
@@ -287,11 +288,6 @@ html, body {
 
 body, div, main, section, article {
   box-sizing: border-box; 
-}
-
-/* universal background color */
-body {
-  background-color: #e0e4f1;
 }
 
 /*fade in transition from https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/*/
@@ -332,7 +328,7 @@ header img {
 }
 
 /* body font */
-.subPage p, footer, #authorNotes, .archiveTable {
+.subPage p, footer, .archiveTable {
   font-family: 'Open Sans', sans-serif;
   font-size: large;
 }
@@ -342,11 +338,30 @@ header img {
 /*general*/
 
 .subPage {
-  width: 70vw;
+  animation: fadeInAnimation ease 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background: #EBEBEB;
   max-width: 98%;
   margin: auto;
-  margin-bottom: 10px;
-  padding: 0px 12px 12px;
+}
+
+@media only screen and (min-width: 601px) {
+  .subPage {
+    width: 90vw;
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .subPage {
+    width: 70vw;
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 .subPage:not(.archivePage) {
@@ -355,16 +370,45 @@ header img {
 
 /* for pictures displayed to the left */
 .leftPic {
-  clear: left;
-  float:right;
-  margin-left:20px;
+    clear: both;
+    float: none;
+    width: 60%;
+    padding: 2%, 20%;
 }
 
 /* for pictures displayed to the right */
 .rightPic {
-  clear: right;
-  float:left;
-  margin-left:20px;
+    clear: both;
+    float: none;
+    width: 60%;
+    padding: 2%, 20%;
+}
+
+@media only screen and (min-width: 601px) {
+  .leftPic, .rightPic {
+    clear: both;
+    float: none;
+    width: 50%;
+    padding: 2%, 20%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .leftPic {
+    clear: left;
+    float: right;
+    width: 40%;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .rightPic {
+    clear: right;
+    float: left;
+    width: 40%;
+    margin-right: 20px;
+  }
 }
 
 /* specific to Characters */
@@ -376,63 +420,119 @@ header img {
 
 /* link colors */
 a {
-      color: #02035f;
+      color: #000;
     }
 
 a:hover {
-      color: #eb70b4;
+      color: #000;
     }
 
 /* HEADER */
 header #nav {
-  outline: 2px solid #000000;
-  font-size: 20px;
-  width: 50%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background: #EBEBEB;
   margin: 10px;
+}
+
+@media only screen and (min-width: 601px) {
+  header #nav {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header #nav {
+    width: 35%;
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+/* button used for top nav bar and comic nav page nav */
+button {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  transition: background-color 0.25s;
+}
+
+button a {
+  color:#000;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #87E2FF;
 }
 
 /* HOMEPAGE */
 
 /* style nav button images */
 .comicNav {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 0px;
-  font-size: 20px;
-  width: 50%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  background: #EBEBEB;
+  height: 3%;
   margin: 10px;
 }
-.comicNav img {
-  width: 80px;
-  max-width: 98%;
-  padding-right: 30px;
+
+@media only screen and (min-width: 601px) {
+  .comicNav {
+    width: 90%;
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .comicNav {
+    width: 90%;
+    padding: 5px;
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .comicNav {
+    width: 35%;
+    padding: 10px;
+    font-size: 20px;
+  }
 }
 
 /* style comic page image */
 .comicPage img {
-  width: 80vh;
+  width: 90vw;
   max-width: 98%;
 }
 
-/* style author notes */
-#authorNotes {
-  background-color:#ffffff;
-  outline: 3px solid #000000;
-  margin: auto;
-  padding: 3px;
-  padding-top: 0px;
-  width: 900px;
-  max-width: 98%;
+@media only screen and (min-width: 601px) {
+  .comicPage img {
+    width: 90vw;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .comicPage img {
+    width: 70vw;
+  }
 }
 
 /* ARCHIVE PAGE */
+
+.chrono {
+  padding: 25px;
+}
 
 /* style table in which archive is displayed */
 .archiveTable {
   width: 90%;
   border-collapse:collapse;
+  padding-bottom: 25px;
 }
 
 /* style archive table cells */
@@ -474,15 +574,15 @@ header #nav {
 
 /* highlight a table row and make pointer into hand when moused over */
 .archiveRow:hover {
-  background-color: #eb70b4;
+  background-color: #87E2FF;
   cursor: pointer;
 }
 
 /* FOOTER */
 footer {
-  color: #421a1a;
-  margin-top: 12px;
-  margin-bottom: 15px;
+  color: #fff;
+  margin-top: 100px;
+  margin-bottom: 5px;
   float: left;
   width: 100%;
   font-size: 12px;
