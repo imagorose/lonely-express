@@ -1,2 +1,2 @@
 # lonely-express
-Development for webcomic using HTML5 Boilerplate and Rarebit templates
+Development for webcomic using Bootstrap HTML/CSS/JS library

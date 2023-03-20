@@ -1,0 +1,43 @@
+@import "functions";
+@import "variables";
+@import "variables-dark";
+
+/* customize primary dark */
+$primary: #001199;
+$danger: #990017;
+
+[data-bs-theme="dark"] {
+  --bs-primary: #{$primary};
+  --bs-primary-bg-subtle: #{$primary};
+  --bs-primary-bg-subtle-dark: #{$primary};
+  --bs-danger: #{$danger};
+  --bs-danger-bg-subtle: #{$danger};
+  --bs-danger-bg-subtle-dark: #{$danger};
+  
+  .btn-primary {
+    --bs-btn-bg: #{$primary};
+  }
+
+  .btn-danger {
+    --bs-btn-bg: #{$danger};
+  }
+}
+
+/*! `Custom` Bootstrap 5 theme */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700);
+$font-family-base:Open Sans;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,700);
+$headings-font-family:Open Sans;
+
+$enable-grid-classes:false;
+$primary:#563d7c;
+$secondary:#868e96;
+$success:#27a78a;
+$danger:#dc3545;
+$info:#1767b7;
+$warning:#ffc107;
+$light:#f8f9fa;
+$dark:#343434;
+@import "bootstrap";
+
+/* Add SASS theme customizations here.. */

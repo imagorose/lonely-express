@@ -3,13 +3,9 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
-
-# THANKS
-
-    <name>
+    Isabella MacDonald -- sole developer -- @mistinmysight
 
 # TECHNOLOGY COLOPHON
 
-    CSS3, HTML5
+    CSS3, HTML5, Bootstrap
     Apache Server Configs, jQuery, Modernizr, Normalize.css
