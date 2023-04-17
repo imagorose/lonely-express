@@ -11,7 +11,7 @@ function changeFontOpen() {
     document.body.removeAttribute("style");
 
     // change img src of all pages (20 per chapter), make sure filename doesn't have preceding 0s to make it able to iterate through all
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i < 11; i++) {
     document.getElementById(i).src = "img/pages/page" + i + "sans.png";
     }
 }
@@ -22,7 +22,7 @@ function changeFontTimes() {
     // slightly adjusted font size
     document.body.setAttribute("style", "font-family: Times, serif; font-size: 1.1rem;")
 
-    for (let i = 1; i < 4; i++) {
+    for (let i = 1; i < 11; i++) {
         document.getElementById(i).src = "img/pages/page" + i + "serif.png";
         }
 }

@@ -10,14 +10,16 @@
         <meta name="description" content="Characters">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta property="og:title" content="Lonely Express Characters">
+        <meta property="og:title" content="Lonely Express">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="www.lonelyexpress.com/characters.html">
-        <meta property="og:image" content="https://www.lonelyexpress.com/tile.png">
-        <meta property="og:image:alt" content="A sparkling white envelope on a purple background"/>
+        <meta property="og:url" content="www.lonelyexpress.com">
+        <meta property="og:image" content="tile.png">
+        <meta property="og:image:alt" content="A sparkling white envelope on a dark background"/>
 
         <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 
         <meta name="theme-color" content="#fafafa">
 
@@ -38,85 +40,129 @@
     </script>
 
     <body>
-        <nav class="navbar sticky-top navbar-expand-lg bg-body-secondary" role="navigation">
-            <div class="container-fluid justify-content-start">
-                <a class="navbar-brand" href="#">Lonely Express</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <!-- Links on the navbar that collapse to a hamburger menu for small screens -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar nav">
-                        <!-- sub pages -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="archive">Archive</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="characters">Characters</a>
-                        </li>
+        <div class="container-fluid g-0">
+            <nav class="navbar navbar-expand-md sticky-top bg-dark-subtle" role="navigation">
+                <div class="container-fluid justify-content-start">
+                    <a class="navbar-brand" href="#">Lonely Express</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <!-- Links on the navbar that collapse to a hamburger menu for small screens -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav nav-pills">
+                            <!-- sub pages -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="archive">Archive</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-body-emphasis active" aria-current="page" href="characters">Characters</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- button options -->
+                    <button class="btn btn-sm btn-dark mx-2">
+                        <div class="form-check form-switch">
+                            <input type="checkbox" class="form-check-input" role="switch" id="darkSwitch">
+                            <label class="form-check-label text-light" for="darkSwitch" aria-label="Toggle dark mode">
+                                    
+                            <!-- bootstrap svg icon for dark mode button -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                                <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                            </svg>
+
+                            </label>
+                        </div>
+                    </button>
+                    <button class="btn btn-sm btn-outline-primary mx-2" id="fontSwitch1" style="font-family: Open Sans, sans;" aria-label="Toggle sans serif font">Aa</button>
+                    <button class="btn btn-sm btn-outline-primary mx-2" id="fontSwitch2" style="font-family: Times, serif;" aria-label="Toggle serif font">Aa</button>
+
+                </div>
+            </nav>
+
+            <div class="container-md text-center align-items-center">
+                <div class="row my-5">
+                    <div class="col">
+                        <h1>
+                            Characters
+                        </h1>
                     </div>
                 </div>
-                
-                <!-- button options -->
-                <button class="btn btn-dark mx-2">
-                    <div class="form-check form-switch">
-                        <input type="checkbox" class="form-check-input" role="switch" id="darkSwitch">
-                        <label class="form-check-label text-light" for="darkSwitch" aria-label="Toggle dark mode">
-                                
-                        <!-- bootstrap svg icon for dark mode button -->
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-                            <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
-                            <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
-                        </svg>
-
-                        </label>
+                <div class="row my-5 justify-content-center align-items-center">
+                    <div class="col-sm-3">
+                        <div>
+                            <img class="img-thumbnail mx-auto d-block" width="150" src="img/via.PNG" alt="Via">
+                        </div>
                     </div>
-                </button>
-                <button class="btn btn-info mx-2" id="fontSwitch1" style="font-family: Open Sans, sans;" aria-label="Toggle sans serif font">Aa</button>
-                <button class="btn btn-info mx-2" id="fontSwitch2" style="font-family: Times, serif;" aria-label="Toggle serif font">Aa</button>     
+
+                    <div class="col-sm-7 bg-light rounded p-3">
+                        <div>
+                            <h2>
+                                Via
+                            </h2>
+                            
+                            <p>
+                                The owner and sole employee of Mercurio Mail, an independent delivery company that works
+                                for a regional dispatcher. In Via's case, her boss is Sir, and she reports to her for jobs
+                                and to receive outgoing packages. She's antisocial, spending more of her time with her serpent-like
+                                delivery vehicle named Seo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5 justify-content-center align-items-center">
+                    <div class="col-sm-3">
+                        <div>
+                            <img class="img-thumbnail mx-auto d-block" width="150" src="img/asa.PNG" alt="Asa">
                     
-            </div>
-        </nav>
+                        </div>
+                    </div>
 
-        <div class="container-xxl">
-            <div class="row justify-content-center my-5">
-                <div class="col-lg-6 bg-light my-5">
-                    <h1>
-                        Characters
-                    </h1>
-                    <h2 class="text-center">
-                        Via
-                    </h2>
-                    <div class="col-lg-6">
-                        <img class="img-thumbnail float-start mx-2" width="150" src="img/via.PNG" alt="Via">
+                    <div class="col-sm-7 bg-light rounded p-3">
+                        <div>
+                            <h2>
+                                Asa
+                            </h2>
+
+                            <p>
+                                A young woman that befriends Via, though offering little details about herself.
+                                She's friendly and has a kind personality, and tries to make Via warm up to her.
+                            </p>
+                        </div>
                     </div>
-                    <p class="">
-                        The owner and sole employee of Mercurio Mail, an independent delivery company that works
-                        for a regional dispatcher. In Via's case, her boss is Sir, and she reports to her for jobs
-                        and to receive outgoing packages. She's antisocial, spending more of her time with her serpent-like
-                        delivery vehicle named Seo.
-                    </p>
-                    <h2 class="text-center">
-                        Asa
-                    </h2>
-                    <div class="col-lg-6">
-                        <img class="img-thumbnail float-start mx-2" width="150" src="img/asa.PNG" alt="Asa">
+                </div>
+
+                <div class="row my-5 justify-content-center align-items-center">
+                    <div class="col-sm-3">
+                        <div class="">
+                            <img class="img-thumbnail mx-auto d-block" width="150" src="img/sir.PNG" alt="Sir">
+                        </div>
                     </div>
-                    <p class="">
-                        A young woman that befriends Via, though offering little details about herself.
-                        She's friendly and has a kind personality, and tries to make Via warm up to her.
-                    </p>
+
+                    <div class="col-sm-7 bg-light rounded p-3">
+                        <div>
+                            <h2>
+                                Sir
+                            </h2>
+
+                            <p>
+                                Via's boss, the head dispatcher for a fleet of independent mail carriers like Via.
+                                She seems to be endeared to Via despite her low tolerance for her unpredictable nature.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        
 
         <!-- Bootstrap CDN and custom javascript links here -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
