@@ -38,3 +38,7 @@
   color: #a992b9 !important;
   border-color: #a992b9;
 }
+
+[data-bs-theme="dark"] .btn-outline-primary:hover {
+  color: #fff !important;
+}
