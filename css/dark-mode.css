@@ -6,7 +6,7 @@
 
 [data-bs-theme="dark"] {
   background-color: #111 !important;
-  color: #eee ;
+  color: #eee;
 }
 
 [data-bs-theme="dark"] .bg-black {
@@ -23,4 +23,18 @@
 
 [data-bs-theme="dark"] .bg-white {
   background-color: #000  !important;
+}
+
+[data-bs-theme="dark"] .nav-link {
+  color: #a992b9  !important;
+}
+
+[data-bs-theme="dark"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #a992b9 !important;
+  color: #fff  !important;
+}
+
+[data-bs-theme="dark"] .btn-outline-primary {
+  color: #a992b9 !important;
+  border-color: #a992b9;
 }
