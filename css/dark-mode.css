@@ -26,7 +26,15 @@
 }
 
 [data-bs-theme="dark"] .nav-link {
-  color: #a992b9  !important;
+  color: #a992b9;
+}
+
+[data-bs-theme="dark"] .nav-link:hover {
+  color: #b6abc9;
+}
+
+[data-bs-theme="dark"] a:hover {
+  color: #291842;
 }
 
 [data-bs-theme="dark"] .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
